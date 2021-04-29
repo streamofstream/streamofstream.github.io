@@ -1,141 +1,238 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
-<title>Stream</title>
 <style>
-p  {
-	font-size: 20px;
-	font-family: serif;
+body{
+    margin: 2em;
+  }
+
+  #curve{
+            margin:0 auto;
+            position:relative;
+            width:100%;
+            height:100%;
+            }
+    
+            #curve:after{
+            content:"";
+            position:absolute;
+            width:50%;
+            height:100px;
+            border-top:1px solid red;
+            border-radius:50%;
+            left:50%;
+            top:10%;
+            }
+ #curve:before{
+            content:"";
+            position:absolute;
+            width:50%;
+            height:100px;
+            border-bottom:1px solid red;
+            border-radius:50%;
+            left:.2%;
+            margin-top:-1%;
+            }
+
+-webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:43% 0%}
+    50%{background-position:58% 100%}
+    100%{background-position:43% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:43% 0%}
+    50%{background-position:58% 100%}
+    100%{background-position:43% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:43% 0%}
+    50%{background-position:58% 100%}
+    100%{background-position:43% 0%}
+}
+
+div.gallery {
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+div.gallery:hover {
+  border: 0px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.svg-container { 
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; 
+  vertical-align: middle; 
+  overflow: hidden; 
+}
+
+p{
+  font-size: 25px;
 }
 
 h2{
-    font-size: 20px;
-  font-family: serif;
+
+  font-weight: normal;
   text-decoration: underline;
-  font-weight:normal;
+  font-size: 25px;
 }
 h3{
-    font-size: 12px;
-  font-family: serif;
-  font-weight:normal;
+  font-weight: normal;
+  font-size: 25px;
 }
-h4{
-    font-size: 20px;
-  font-family: serif;
-  text-decoration: none;
-  font-weight:normal;
-}
-
-body
-{
-  margin: 2em;
-}
-
-.myDiv {
-background: linear-gradient(270deg, #aabeb9, #c0d5e7, #e7e5c0);
-    background-size: 600% 600%;
-
-    -webkit-animation: AnimationName 37s ease infinite;
-    -moz-animation: AnimationName 37s ease infinite;
-    animation: AnimationName 37s ease infinite;
-  width: 300px;
-  height: 300px;
-  border: 15px blue;
-  padding: 50px;
-  font-size: 30px;
-  letter-spacing: 1px;
-  margin: 20px;
-   box-shadow: 3px 3px 3px lightgrey;
-
-}
-
-
-div {
- 
-display: block;
-}
-
-  @-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
-
-input[type=text] {
-  width: 50%;
-  padding:20px 20px;
-  margin: 1px 0;
-  box-sizing: border-box;
-  font-family: serif;
-  font-size: 20px;
-}
-
-input[type=button], input[type=submit], input[type=reset] {
-  background-color: yellow;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-   font-family: serif;
-   color: black;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 30px;
-  font-size: 20px;
+h5{
+  font-weight: normal;
+  font-size: 10px;
 }
 
 dt{
-   font-size: 20px;
-    line-height: 2em;
-    text-indent: 50px;
+  font-size: 20px;
+  line-height: 2em;
 }
 
-dd{
-   color: blue;
-   text-indent: 56px;
-   line-height: 2em;
+input[type=text] {
+   font-family: serif;
+  font-size: 25px;
+  width: 50%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
-
+input[type=button], input[type=submit], input[type=reset] {
+  font-size: 25px;
+  font-family: serif;
+  border-radius: 25px;
+  background-color: yellow;
+  border: none;
+  color: black;
+  padding:14px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 2px;
+  background-color: transparent;
+  color: black;
 
 </style>
 </head>
 <body>
 
-<div class="myDiv">everyone should be quiet by a little stream and listen</div>
-<br>
 <p><b>stream</b> / strem / noun<b>  1</b> a body of running water (such as a river or creek) flowing on the earth
 <b> 2</b> digital data (such as audio or video material) that is continuously delivered one packet at a time and is usually intended for immediate processing or playback 
 </p>
+
+
+
 <br>
+</svg>
 <p>Dear Listeners,</p>
-<p><i>Everyone should be quiet by a little stream and listen</i> is an ongoing gathering of streams. Each stream is recorded with an underwater microphone and uploaded to a free music streaming service. There the sound of streams - the natural flow of water metamorphoses into a steady, continuous flow of data transmitting over the internet. Stream of a stream. What does it mean?
+<p><i>Stream of a stream</i> is an ongoing gathering of streams. Each stream is recorded with an underwater microphone and uploaded to a free music streaming service. There the sound of streams - the natural flow of water metamorphoses into a steady, continuous flow of data transmitting over the internet. Stream of a stream. What does it mean?
 <br>
 <br>
 Long before recorded history, people have intervened with streams, altering its course, characteristics or flow to manage water resources, protect against flooding, or make passage across river easier.  Now when I think of stream, I think of streaming music, movies, data. How do we interfere with this stream? Do we also build mills on them to generate power? For who? Who lives in the cities near the stream, where the land is fertile and who lives far? How is the course of the stream altered? 
-<p>
-
-<br> 
-
-
+</p>
+<br>
 
 <h2>Upcoming and past streams</h2>
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1039110478&color=%2374786d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ane-ka-mina-kov" title="Anežka Minaříková" target="_blank" style="color: #cccccc; text-decoration: none;">Anežka Minaříková</a> · <a href="https://soundcloud.com/ane-ka-mina-kov/mill-river" title="Mill River" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
 
-<h4>Sing up below to receive a link to the current streaming playlist and notifications about upcoming live streams:-)</h4>
+ <dl>
+  <dt>04/28/2021, 8pm EST, Mill River, 41°20'09.3"N 72°54'37.7"W</dt>
+  <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1039110478&color=%2374786d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ane-ka-mina-kov" title="Anežka Minaříková" target="_blank" style="color: #cccccc; text-decoration: none;"></a> · <a href="https://soundcloud.com/ane-ka-mina-kov/mill-river" title="Mill River" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
+  <dd></dd>
+  <dt></dt>
+  <dd></dd>
+</dl>
+
+
+<h2>Gallery</h2>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="6.png">
+      <img src="assets/6.png" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Catching the stream,Catching the stream,Catching the stream,</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="9.png">
+      <img src="assets/9.png" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Catching the stream,Catching the stream,Catching the stream,</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="7.jpg">
+      <img src="assets/7.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Catching the stream,Catching the stream,Catching the stream,Catching the stream,</div>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+
+  <br>
+  <br>
+<br>
+
+<h3>Sing up below to receive notifications about upcoming streams:-)</h3></div>
 
 <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSe88c5lRznzpsaY6VNb4Lx4C0KFWpe2xiyW3c-Rr7nU3sKbpw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
   
@@ -153,10 +250,12 @@ $('#gform').on('submit', function(e) {
   $('#gform').prepend('Thank you! Looking forward to listening with you... ');
   });
 </script>
-
+</div>
 <br>
 <br>
-<h3>Anežka Minaříková, 2021</h3>
+ <footer>
+  <h5>Anežka Minaříková, 2021</h5>
+</footer> 
 
 </body>
-</html> 
+</html>
