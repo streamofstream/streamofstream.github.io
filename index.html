@@ -2,10 +2,33 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" /> 
 <style>
+
+
+
+
 body{
     margin: 2em;
+    background: #E6E7E8;
   }
+
+
+   @-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 
   #curve{
             margin:0 auto;
@@ -117,27 +140,41 @@ div.desc {
 p{
   font-size: 25px;
   line-height: 1.2em;
+  color:#303030;
+  word-spacing: 2px;
+  font-family: 'fourier_new_sharpregular';
 }
 
 h2{
 
   font-weight: normal;
-    text-decoration-line: underline;
-  text-decoration-style: dotted;
+  text-decoration: underline;
+   font-family: 'fourier_new_sharpregular';
   font-size: 25px;
+  color:#303030;
 }
 h3{
   font-weight: normal;
+     font-family: 'fourier_new_sharpregular';
   font-size: 25px;
+  color:#303030;
 }
 h5{
   font-weight: normal;
-  font-size: 10px;
+  font-size: 15px;
+   color:#303030;
+  font-family: monospace;
+  color:#303030;
 }
 
 dt{
-  font-size: 20px;
-  line-height: 2em;
+  font-size: 15px;
+  line-height: 1em;
+  text-indent: 0.1em;
+   color:#303030;
+  font-family: monospace;
+
+
 }
 
 input[type=text] {
@@ -168,6 +205,13 @@ footer {
   background-color: transparent;
   color: black;
 
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
 
 
 
@@ -175,21 +219,13 @@ footer {
 </head>
 <body>
 
-<img src="assets/streampencil.png" alt="Nature" class="responsive" width="100" height="100">
-
-<p><b>stream</b> / strem / noun<b>  1</b> a body of running water (such as a river or creek) flowing on the earth
-<b> 2</b> digital data (such as audio or video material) that is continuously delivered one packet at a time and is usually intended for immediate processing or playback 
-</p>
-
-
-
-</svg>
-<p>Dear Listeners,</p>
-<p><i>Stream of a stream</i> is an ongoing gathering of streams. Each stream is recorded with an underwater microphone and uploaded to a music streaming service. There the sound of streams - the natural flow of water metamorphoses into a steady, continuous flow of data transmitting over the internet. Stream of a stream. What does it mean?
-<br>
+<p>Dear Listeners,<i> Stream of a stream</i> is an ongoing gathering of streams. Each stream is recorded with an underwater microphone and uploaded to a music streaming service. There the sound of streams - the natural flow of water metamorphoses into a steady, continuous flow of data transmitting over the internet. Stream of a stream. What does it mean?
+  <br>
+<img src="assets/streampenciltransparent.png" alt="Nature" class="responsive" width="100" height="100">
 <br>
 Long before recorded history, people have intervened with streams, altering its course, characteristics or flow to manage water resources, protect against flooding, or make passage across river easier.  Now when I think of stream, I think of streaming music, movies, data. How do we interfere with this stream? Do we also build mills on them to generate power? For who? Who lives in the cities near the stream, where the land is fertile and who lives far? How is the course of the stream altered? 
 </p>
+<br>
 <br>
 
 <h2>Upcoming and past streams</h2>
@@ -197,19 +233,19 @@ Long before recorded history, people have intervened with streams, altering its 
 
  <dl>
   <dt>04/28/2021, 8pm EST, Mill River, 41°20'09.3"N 72°54'37.7"W</dt>
+    <br>
   <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1039110478&color=%2374786d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ane-ka-mina-kov" title="Anežka Minaříková" target="_blank" style="color: #cccccc; text-decoration: none;"></a> · <a href="https://soundcloud.com/ane-ka-mina-kov/mill-river" title="Mill River" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
   <dd></dd>
   <dt></dt>
   <dd></dd>
 </dl>
 
-<br>
 <h2>Gallery of streams</h2>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="assets/6.png">
-      <img src="assets/6.png" alt="Cinque Terre" width="600" height="400">
+
+      <img src="assets/d.png" alt="Cinque Terre" width="600" height="400">
     </a>
     <div class="desc">Mill River, 41°20'09.3"N 72°54'37.7"W, Test 01</div>
   </div>
@@ -217,8 +253,8 @@ Long before recorded history, people have intervened with streams, altering its 
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="assets/9.png">
-      <img src="assets/9.png" alt="Forest" width="600" height="400" >
+
+      <img src="assets/c.png" alt="Forest" width="600" height="400" >
     </a>
     <div class="desc">Mill River, 41°20'09.3"N 72°54'37.7"W, Test 02</div>
   </div>
@@ -226,8 +262,8 @@ Long before recorded history, people have intervened with streams, altering its 
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="assets/7.jpg">
-      <img src="assets/7.jpg" alt="Northern Lights" width="600" height="400">
+   
+      <img src="assets/b.png" alt="Northern Lights" width="600" height="400">
     </a>
     <div class="desc">Mill River, 41°20'09.3"N 72°54'37.7"W, Final </div>
   </div>
@@ -238,8 +274,10 @@ Long before recorded history, people have intervened with streams, altering its 
 
 <div style="padding:6px;">
 
-  <br>
-
+  <p><b>stream</b> / strem / noun<b>  1</b> a body of running water (such as a river or creek) flowing on the earth
+<b> 2</b> digital data (such as audio or video material) that is continuously delivered one packet at a time and is usually intended for immediate processing or playback 
+</p>
+<br>
 <h3>Sing up below to receive notifications about upcoming streams.</h3></div>
 
 <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSe88c5lRznzpsaY6VNb4Lx4C0KFWpe2xiyW3c-Rr7nU3sKbpw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
@@ -261,7 +299,10 @@ $('#gform').on('submit', function(e) {
 </div>
 <br>
 <br>
+
+
  <footer>
+   <h5>Anežka Minaříková<h5>
   <h5>2021 <h5>
 
 
