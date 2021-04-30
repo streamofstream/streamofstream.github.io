@@ -267,7 +267,7 @@ input::-webkit-slider-thumb {
   background: #bdbdbd;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 775px) {
 	/* Phones in Portrait Orientation */
 body {
   font-family: fourier_new_sharpregular;
