@@ -269,10 +269,14 @@ input::-webkit-slider-thumb {
 
 @media (max-width: 575px) {
 	/* Phones in Portrait Orientation */
+body {
+  font-family: fourier_new_sharpregular;
+  margin: 0em 2em 1.3em 0.8em;
+  background: #E6E7E8;
+}
   #audioWrapper {
     width: 350px;
     height: 500px;
-margin-right: 4em;
 
   }
   
