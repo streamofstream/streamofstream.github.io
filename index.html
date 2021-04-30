@@ -4,25 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Custom HTML5 Audio Player</title>
+  <title>Stream of stream</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" type="image/png" href="/favicon.ico"/>
 </head>
+
+
 <body>
+
+<p>Dear Listeners,<i> Stream of a stream</i> is an ongoing gathering of streams. Each stream is recorded with an underwater microphone and uploaded to a music streaming service. There the sound of streams - the natural flow of water metamorphoses into a steady, continuous flow of data transmitting over the internet. Stream of a stream. What does it mean?
+<br> <img src="assets/streampenciltransparent.png" alt="Nature" class="responsive" width="100" height="80">
+<br> Long before recorded history, people have intervened with streams, altering its course, characteristics or flow to manage water resources, protect against flooding, or make passage across river easier. Now when I think of stream, I think of streaming music, movies, data. How do we interfere with this stream? Do we also build mills on them to generate power? For who? Who lives in the cities near the stream, where the land is fertile and who lives far? How is the course of the stream altered? </p>
+<br>
+<h2>Upcoming and past streams</h2>
+<dl> <dt></dt>
+<br>
+
   <div id="audioWrapper">
-    <audio id="audioPlayer">
-      <source src="assets/tcm.mp3" type="audio/mpeg" />
+    <audio id="audioPlayer" preload="metadata">
+      <source src="assets/millriver.wav" type="audio/wav" />
       Your browser does not support the audio element.
     </audio>
     <div id="playPause" class="play"></div>
     <div id="trackArtwork"><img src="assets/smiths.jpg" /></div>
-    <div id="trackArtist">The Smiths</div>
-    <div id="trackTitle">This Charming Man</div>
+    <div id="trackArtist">Mill River</div>
+    <div id="trackTitle">04/28/2021, 8pm EST, 41°20'09.3"N 72°54'37.7"W</div>
     <div id="trackProgress">
       <div id="elapsedTime"></div>
       <input type="range" id="scrubBar" value="0" max="100" />
       <div id="remainingTime"></div>
     </div>
   </div>
+
+<br>
+  
 <script type="text/javascript" src="js/audioplayer.js"></script>
+
+<p><b>stream</b> / strem / noun<b>  1</b> a body of running water (such as a river or creek) flowing on the earth <b> 2</b> digital data (such as audio or video material) that is continuously delivered one packet at a time and is usually intended for immediate processing or playback </p>
+    <br>
+    <h3>Sing up below to receive notifications about upcoming streams.</h3></div>
+
+    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSe88c5lRznzpsaY6VNb4Lx4C0KFWpe2xiyW3c-Rr7nU3sKbpw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+    <input type="text" name="entry.1758100277" id="entry.1758100277" placeholder="Your email address...">
+    <input type="submit" value="Submit"> </form>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  var submitted = false;
+  </script>
+  <script type="text/javascript">
+  $('#gform').on('submit', function(e) {
+    $('#gform *').fadeOut(2000);
+    $('#gform').prepend('Thank you! Looking forward to listening with you... ');
+  });
+  </script>
+  <br>
+  <footer>
+    <h6>2021 </h6>
+
+
+</footer> 
+
 </body>
 </html>
