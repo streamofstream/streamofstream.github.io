@@ -5,6 +5,11 @@ var remainingTime = document.getElementById('remainingTime');
 var playPause     = document.getElementById('playPause');
 var trackLength;
 
+var au = document.getElementById("audioPlayer");
+au.onloadedmetadata = function() {
+    console.log(au.duration)
+};
+
 // Set up a listener so we can get the track data once it's loaded
 audioPlayer.addEventListener('loadedmetadata', function() {
   // Get the length for the current track
