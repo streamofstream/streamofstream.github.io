@@ -272,7 +272,8 @@ input::-webkit-slider-thumb {
   #audioWrapper {
     width: 100%;
     height: 500px;
-    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 
   }
   
