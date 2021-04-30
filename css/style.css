@@ -20,6 +20,12 @@ div.gallery img {
   height: auto;
 }
 
+.myDiv {
+  border: 0px outset red;
+  background-color: ;    
+  text-align: center;
+}
+
 div.desc {
   padding: 2px;
   text-align: left;
@@ -28,22 +34,22 @@ div.desc {
   color: #303030;
 }
 
-  footer {
-    text-align: center;
-    padding: 0px;
-    background-color: transparent;
-    color: #303030;
-  font-family: 'fourier_new_sharpregular';}
-
-
-* {
-  box-sizing: border-box;
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: transparent;
+   color: white;
+   text-align: right;
 }
+
 
 .responsive {
   padding: 0 6px;
   float: left;
-  width: 24.99999%;
+  width: 20.99999%;
+  position: sticky;
 }
 
 @media only screen and (max-width: 700px) {
@@ -77,7 +83,7 @@ input[type=text] {
     background-color: yellow;
     border: none;
     color: black;
-    padding: 14px 32px;
+    padding: 10px 32px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
@@ -94,11 +100,14 @@ body {
   background: #E6E7E8;
 }
 
- .responsive {
+ .responsive2 {
     padding: 0 6px;
     float: left;
-    width: 32.99999%;
+    margin-top: 0em;
+    margin-right: 6em;
+    width: 39.99999%;
   }
+
 
 p {
     font-size: 25px;
@@ -131,7 +140,13 @@ p {
     font-family: monospace;
     font-weight: normal;
   }
-  
+   h1 {
+
+    font-weight: normal;
+    font-size: 20px;
+    color: #303030;
+    font-family: 'fourier_new_sharpregular';
+  }
   h5 {
     font-weight: normal;
     font-size: 15px;
@@ -142,10 +157,12 @@ p {
 
   h6 {
     font-weight: normal;
-    font-size: 25px;
+    font-size: 20px;
     color: #303030;
     font-family: 'fourier_new_sharpregular';
   }
+
+
 ::placeholder {
   color: grey;
   font-size: 15px;
@@ -153,13 +170,29 @@ p {
 }
 
 #audioWrapper {
-  width: 650px;
+  width: 100%;
   height: 150px;
   margin: 0 auto;
+  margin-bottom: 3em;
+  border: 0px solid #f3f3f3;
+  padding: 0;
+  position: relative;
+  float: left;
+}
+#sign{
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 0em;
   border: 0px solid #f3f3f3;
   padding: 0;
   position: relative;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 
 #trackArtwork {
   float: left;
@@ -216,7 +249,7 @@ p {
   color: #aaaaaa;
   padding: 3px 5px 0 5px;
   float: left;
-  font-size: 1em;
+  font-size: 0.8em;
   font-family: monospace;
   color: #303030;
 }
@@ -246,8 +279,9 @@ input::-webkit-slider-thumb {
 @media (max-width: 575px) {
 	/* Phones in Portrait Orientation */
   #audioWrapper {
-    width: 350px;
+    width: 100%;
     height: 500px;
+    margin-right: em;
   }
   
   #trackArtwork {
