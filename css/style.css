@@ -161,13 +161,14 @@ p {
 }
 
 #audioWrapper {
+
   width: 100%;
   height: 150px;
   margin: 0 auto;
-  margin-bottom: 5em;
   border: 0px solid #f3f3f3;
   padding: 0;
   position: relative;
+
 }
 #sign{
   width: 100%;
@@ -269,8 +270,9 @@ input::-webkit-slider-thumb {
 @media (max-width: 575px) {
 	/* Phones in Portrait Orientation */
   #audioWrapper {
-    width: 100%;
+    width: 350px;
     height: 500px;
+margin-right: 4em;
 
   }
   
