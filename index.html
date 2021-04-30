@@ -20,6 +20,15 @@
 <dl> <dt></dt>
 <br>
 
+<script>
+       function durationchange() {
+          var duration = $('audio')[0].duration;
+          if(!isNaN(duration)) {
+              $('#duration').html(Math.ceil(duration));
+          }
+        }
+    </script>
+
   <div id="audioWrapper">
     <audio id="audioPlayer" preload="metadata">
       <source src="assets/millriver.wav" type="audio/wav" />

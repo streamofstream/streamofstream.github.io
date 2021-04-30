@@ -5,10 +5,6 @@ var remainingTime = document.getElementById('remainingTime');
 var playPause     = document.getElementById('playPause');
 var trackLength;
 
-var au = document.getElementById("audioPlayer");
-au.onloadedmetadata = function() {
-    console.log(au.duration)
-};
 
 // Set up a listener so we can get the track data once it's loaded
 audioPlayer.addEventListener('loadedmetadata', function() {
@@ -19,6 +15,10 @@ audioPlayer.addEventListener('loadedmetadata', function() {
   elapsedTime.innerHTML   = formatTrackTime(audioPlayer.currentTime);
   remainingTime.innerHTML = '-' + formatTrackTime(trackLength - audioPlayer.currentTime);
 });
+
+function runWhenLoaded() { /* read duration etc, this = audio element */ }
+
+
 
 // Set up a listener to watch for play / pause and display the correct image
 playPause.addEventListener('click', function() {
