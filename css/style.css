@@ -1,162 +1,14 @@
-
-@font-face {
-    font-family: 'fourier_new_sharpregular';
-    src: url('fouriernewsharp-regular-webfont.woff2') format('woff2'),
-         url('fouriernewsharp-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-div.gallery {
-  border: 0px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 0px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 2px;
-  text-align: left;
-  font-size: 10px;
-  font-family:monospace;
-  color: #303030;
-}
-
-  footer {
-    text-align: center;
-    padding: 0px;
-    background-color: transparent;
-    color: #303030;
-  font-family: 'fourier_new_sharpregular';}
-
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-input[type=text] {
-    font-family: serif;
-    border-radius: 25px;
-    font-size: 25px;
-    width: 50%;
-    padding: 13px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-  }
-  
-  input[type=button],
-  input[type=submit],
-  input[type=reset] {
-    font-size: 25px;
-    font-family: 'fourier_new_sharpregular';
-    border-radius: 25px;
-    background-color: yellow;
-    border: none;
-    color: black;
-    padding: 14px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 body {
-  font-family: fourier_new_sharpregular;
-  margin: 2em;
-  background: #E6E7E8;
-}
-
- .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 32.99999%;
-  }
-
-p {
-    font-size: 25px;
-    line-height: 1.2em;
-    color: #303030;
-    word-spacing: 2, 3px;
-    font-family: 'fourier_new_sharpregular';
-  }
-  dt {
-    font-size: 15px;
-    line-height: 1.2em;
-    color: #303030;
-    word-spacing: 2, 3px;
-    font-family: monospace;
-  }
-  
-  h2 {
-    font-weight: normal;
-    text-decoration: underline;
-    font-family: 'fourier_new_sharpregular';
-    font-size: 25px;
-    color: #303030;
-  }
-  
-  h3 {
-    font-size: 1em;
-    line-height: 1.3em;
-    text-indent: 0.1em;
-    color: #303030;
-    font-family: monospace;
-    font-weight: normal;
-  }
-  
-  h5 {
-    font-weight: normal;
-    font-size: 15px;
-    color: #303030;
-    font-family: monospace;
-    color: #303030;
-  }
-
-  h6 {
-    font-weight: normal;
-    font-size: 25px;
-    color: #303030;
-    font-family: 'fourier_new_sharpregular';
-  }
-::placeholder {
-  color: grey;
-  font-size: 15px;
-  font-family: 'fourier_new_sharpregular';
+  max-width: 960px;
+  margin: 20px auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #audioWrapper {
   width: 650px;
   height: 150px;
   margin: 0 auto;
-  border: 0px solid #f3f3f3;
+  border: 1px solid #f3f3f3;
   padding: 0;
   position: relative;
 }
@@ -193,22 +45,21 @@ p {
   text-align: left;
   overflow: hidden;
   padding: 10px 5px 5px 15px;
-  color: #303030;
+  color: #585858;
 }
 
 #trackArtist {
-  font-size: 25px;
+  font-size: 2em;
 }
 
 #trackTitle {
-  font-size: 1em;
-  font-family: monospace;
+  font-size: 1.5em;
 }
 
 #trackProgress {
   position: absolute;
   bottom: 10px;
-  left: 160px;
+  left: 165px;
   width: 480px;
 }
 
@@ -216,20 +67,18 @@ p {
   color: #aaaaaa;
   padding: 3px 5px 0 5px;
   float: left;
-  font-size: 1em;
-  font-family: monospace;
-  color: #303030;
+  font-size: 0.9em;
 }
 
 input[type="range"] {
   -webkit-appearance: none;
-  border: 1px solid #303030;
+  border: 1px solid #f0f0f0;
   width: 80%;
-  height: 1px;
+  height: 15px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  border-radius: 0px;
-  background-color: #303030;
+  border-radius: 20px;
+  background-color: #f0f0f0;
   float: left;
 }
 
@@ -237,7 +86,7 @@ input::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 20px;
   height: 20px;
-  border:0px solid #bdbdbd;
+  border:1px solid #bdbdbd;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #bdbdbd;
@@ -277,9 +126,5 @@ input::-webkit-slider-thumb {
   input[type="range"] {
     width: 72%;
   }
-  .responsive {
-      width: 100%;
-    }
-
   
 }
