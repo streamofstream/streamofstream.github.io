@@ -1,0 +1,328 @@
+@font-face {
+  font-family: "fourier_new_sharpregular";
+  src: url("fouriernewsharp-regular-webfont.woff2") format("woff2"),
+    url("fouriernewsharp-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 20.99999%;
+  position: sticky;
+}
+
+   .footer{ 
+       position: fixed;     
+       text-align: center;    
+       bottom: 0px; 
+       width: 100%;
+   }  
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+input[type="text"] {
+  font-family: serif;
+  border-radius: 25px;
+  font-size: 25px;
+  width: 50%;
+  padding: 13px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  font-size: 25px;
+  font-family: "fourier_new_sharpregular";
+  border-radius: 25px;
+  background-color: yellow;
+  border: none;
+  color: black;
+  padding: 10px 32px;
+  text-decoration: none;
+  margin: 6px 10px;
+  cursor: pointer;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: fourier_new_sharpregular;
+  margin: 2em;
+  background: #e6e7e8;
+}
+
+.responsive2 {
+  padding: 0 6px;
+  float: left;
+  margin-top: 0em;
+  margin-right: 6em;
+  width: 39.99999%;
+}
+
+p {
+  font-size: 25px;
+  line-height: 1.2em;
+  color: #303030;
+  word-spacing: 2, 3px;
+  font-family: "fourier_new_sharpregular";
+}
+dt {
+  font-size: 15px;
+  line-height: 1.2em;
+  color: #303030;
+  word-spacing: 2, 3px;
+  font-family: monospace;
+}
+
+h2 {
+  font-weight: normal;
+  text-decoration: underline;
+  font-family: "fourier_new_sharpregular";
+  font-size: 25px;
+  color: #303030;
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 1.3em;
+  text-indent: 0.1em;
+  color: #303030;
+  font-family: monospace;
+  font-weight: normal;
+}
+h1 {
+  font-weight: normal;
+  font-size: 20px;
+  color: #303030;
+  font-family: "fourier_new_sharpregular";
+}
+h5 {
+  font-weight: normal;
+  line-height: 1.2em;
+  font-size: 15px;
+  font-family: monospace;
+  color: #303030;
+}
+
+h6 {
+  line-height: 1.2em;
+  font-weight: normal;
+  font-size: 20px;
+  color: #303030;
+  font-family: "fourier_new_sharpregular";
+}
+
+h7 {
+  font-weight: normal;
+  font-size: 20px;
+  color: red;
+  font-family: "fourier_new_sharpregular";
+}
+
+::placeholder {
+  color: grey;
+  font-size: 15px;
+  font-family: "fourier_new_sharpregular";
+}
+
+#audioWrapper {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  border: 0px solid #f3f3f3;
+  padding: 0;
+  position: relative;
+}
+#sign {
+  width: 100%;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 0em;
+  border: 0px solid #f3f3f3;
+  padding: 0;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  flex-wrap: wrap;
+  display: table-row;
+}
+
+.flex-child {
+  flex: 1;
+  border: 0px solid yellow;
+}
+
+.flex-child:first-child {
+
+  margin-right:30%;
+}
+
+#trackArtwork {
+  float: left;
+}
+
+#trackArtwork img {
+  width: 280px;
+  height: 280px;
+}
+
+#playPause,
+.play,
+.pause {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 280px;
+}
+
+.play {
+  background-image: url("../assets/play.png");
+  background-size: contain;
+}
+
+.pause {
+  background-image: url("../assets/pause.png");
+  background-size: contain;
+}
+
+#trackArtist,
+#trackTitle {
+  display: block;
+  text-align: left;
+  overflow: hidden;
+  padding: 10px 5px 5px 15px;
+  color: #303030;
+}
+
+#trackArtist {
+  font-size: 25px;
+}
+
+#trackTitle {
+  font-size: 1.2em;
+  font-family: monospace;
+}
+
+#trackProgress {
+  position: absolute;
+  bottom: 20px;
+  left: 290px;
+  width: 480px;
+}
+
+#elapsedTime,
+#remainingTime {
+  color: #aaaaaa;
+  padding: 3px 5px 0 5px;
+  float: left;
+  font-size: 1em;
+  font-family: monospace;
+  color: blue;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  border: 1px solid #303030;
+  width: 80%;
+  height: 1px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 0px;
+  background-color: #303030;
+  float: left;
+}
+
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 0px solid #bdbdbd;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #bdbdbd;
+}
+
+@media (max-width: 775px) {
+  /* Phones in Portrait Orientation */
+  body {
+    font-family: fourier_new_sharpregular;
+    margin: 0em 2em 1.8em 1.3em;
+    background: #e6e7e8;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-child {
+    flex: 1;
+    border: 0px solid yellow;
+  }
+
+  .flex-child:first-child {
+    margin-right: 10px;
+  }
+
+  #audioWrapper {
+    width: 350px;
+    height: 500px;
+  }
+
+  #trackArtwork {
+    float: none;
+  }
+
+  #trackArtwork img {
+    width: 350px;
+    height: 350px;
+  }
+
+  #playPause,
+  .play,
+  .pause {
+    width: 350px;
+    height: 350px;
+  }
+
+  #trackProgress {
+    bottom: 1px;
+    left: 10px;
+    width: 340px;
+  }
+
+  #elapsedTime,
+  #remainingTime {
+    padding: 3px 5px 0 5px;
+    float: left;
+  }
+
+  input[type="range"] {
+    width: 72%;
+  }
+  .responsive {
+    width: 100%;
+  }
+}
