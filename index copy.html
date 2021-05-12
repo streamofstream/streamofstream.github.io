@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Stream of stream</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="icon" type="image/ico" href="favicon.ico"/>
+   </head>
+   <body>
+      <p>Dear Listeners,<i> Stream of a stream </i> is an ongoing gathering of streams. Each stream is recorded with an underwater microphone and uploaded to a music streaming service. There the sound of streams - the natural flow of water metamorphoses into a steady, continuous flow of data transmitting over the internet. Stream of a stream. What does it mean?
+         <br> <img src="assets/streampenciltransparent.png" alt="Nature" class="responsive" width="100" height="80">
+         <br> Long before recorded history, people have intervened with streams, altering its course, characteristics or flow to manage water resources, protect against flooding, or make passage across river easier. Now when I think of stream, I think of streaming music, movies, data. How do we interfere with this stream? Do we also build mills on them to generate power? For who? Who lives in the cities near the stream, where the land is fertile and who lives far? How is the course of the stream altered? 
+      </p>
+      <br>
+
+          <audio id="myAudio2" src="millriver.wav" preload="auto">
+</audio>
+<a onClick="togglePlay()">Click here to hear.</a>
+<script>
+
+var myAudio2 = document.getElementById("myAudio2");
+var isPlaying = false;
+
+function togglePlay() {
+  isPlaying ? myAudio.pause() : myAudio2.play();
+};
+
+myAudio2.onplaying = function() {
+  isPlaying = true;
+};
+myAudio2.onpause = function() {
+  isPlaying = false;
+};
+</script>
+
+      <h2>Upcoming and past streams</h2>
+      <dl>
+      <br>
+    <audio id="myAudio" src="http://www.sousound.com/music/healing/healing_01.mp3" preload="auto">
+</audio>
+<a onClick="togglePlay()">Click here to hear.</a>
+<script>
+
+var myAudio = document.getElementById("myAudio");
+var isPlaying = false;
+
+function togglePlay() {
+  isPlaying ? myAudio.pause() : myAudio.play();
+};
+
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
+</script>
+
+
+
+      <div class="flex-container">
+         <div class="flex-child magenta">
+            <h6><b>stream</b> / strem / noun<b>  1</b> a body of running water (such as a river or creek) flowing on the earth <b> 2</b> digital data (such as audio or video material) that is continuously delivered one packet at a time and is usually intended for immediate processing or playback </h6>
+         </div>
+            <h5>Sing up below to receive notifications about upcoming streams.</h5>
+         <div class="flex-child green">
+            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSe88c5lRznzpsaY6VNb4Lx4C0KFWpe2xiyW3c-Rr7nU3sKbpw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+               <input type="text" name="entry.1758100277" id="entry.1758100277" placeholder="Your email address...">
+               <input type="submit" value="Submit"> 
+            </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script type="text/javascript">
+               var submitted = false;
+            </script>
+            <script type="text/javascript">
+               $('#gform').on('submit', function(e) {
+                 $('#gform *').fadeOut(2000);
+                 $('#gform').prepend('Thank you! Looking forward to listening with you... ');
+               });
+            </script>
+         </div>
+      </div>
+      <br>
+      <h7>2021, Anežka Minaříková</h7>
+   </body>
+</html>
+

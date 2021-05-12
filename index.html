@@ -28,28 +28,107 @@
             }
           }
       </script>
-      <div id="audioWrapper">
-         <audio id="audioPlayer" preload="metadata">
+
+      <p>04/28/2021, 8PM Eastern Time, Mill River</p>
+      <h5>41°20'09.3"N 72°54'37.7"W</h5>
+
+
+      <div id="audioWrapper" class="audioWrapper">
+         <audio id="myAudio"  preload="metadata" class="audioPlayer">
             <source src="assets/millriver.wav" type="audio/wav" />
             Your browser does not support the audio element.
          </audio>
-         <div id="playPause" class="play"></div>
-         <div id="trackArtwork"><img src="assets/smiths.jpg" /></div>
-         <div id="trackArtist">04/28/2021, 8PM Eastern Time, Mill River</div>
-         <div id="trackTitle">41°20'09.3"N 72°54'37.7"W</div>
-         <div id="trackProgress">
-            <div id="elapsedTime"></div>
-            <input type="range" id="scrubBar" value="0" max="100" />
-            <div id="remainingTime"></div>
-         </div>
+         
+
+         <div id="playPause" class="play playPause"></div>
+
+         <div class="trackArtwork"></div>
+       
       </div>
-      <script type="text/javascript" src="js/audioplayer.js"></script>
+      <br>
+       <br>
+
+<!-- 
+      <audio controls class="audioPlayer">
+         <source src="assets/millriver.wav" type="audio/wav" />
+       Your browser does not support the audio element.
+       </audio> -->
+
+        <p>05/11/2021, 9PM Eastern Time, West River</p>
+         <h5>41°18'49.4"N 72°57'23.6"W</h5>
+
+        <div id="audioWrapper" class="audioWrapper">
+         <audio id="myAudio"  preload="metadata" class="audioPlayer">
+            <source src="assets/westriver.wav" type="audio/wav" />
+            Your browser does not support the audio element.
+         </audio>
+         
+
+         <div id="playPause" class="play playPause"></div>
+
+         <div class="trackArtwork"></div>
+       
+      </div>
+
+<br>
+ 
+
+
+
+
+   <!-- jade: compressed-->
+   <!-- <ul class="audio-players">
+      <li>
+      <div class="audio-player js-audio-player">
+         <button class="audio-player__control js-control">
+            <div class="audio-player__control-icon"></div>
+         </button>
+         <h4 class="audio-player__title">Audio Clip One</h4>
+         <audio preload="auto">
+            <source src="http://pd.npr.org/anon.npr-mp3/npr/codeswitch/2016/08/20160803_codeswitch_11b.mp3"/>
+         </audio><img class="audio-player__cover" src="https://unsplash.it/g/300?image=29"/>
+         <video preload="auto" loop="loop">
+            <source src="https://dl.dropboxusercontent.com/u/5185018/audio-waves.mp4" type="video/mp4"/>
+         </video>
+      </div>
+      </li>
+      <li>
+      <div class="audio-player js-audio-player">
+         <button class="audio-player__control js-control">
+            <div class="audio-player__control-icon"></div>
+         </button>
+         <h3 class="audio-player__title">Audio Clip Two</h3>
+         <audio preload="auto">
+            <source src="http://pd.npr.org/anon.npr-mp3/npr/ama/2016/06/20160607_ama_bandbonus.mp3"/>
+         </audio><img class="audio-player__cover" src="https://unsplash.it/g/300/?image=48"/>
+         <video preload="auto" loop="loop">
+            <source src="https://dl.dropboxusercontent.com/u/5185018/audio-waves.mp4" type="video/mp4"/>
+         </video>
+      </div>
+      </li>
+      <li>
+      <div class="audio-player js-audio-player">
+         <button class="audio-player__control js-control">
+            <div class="audio-player__control-icon"></div>
+         </button>
+         <h3 class="audio-player__title">Audio Clip Three</h3>
+         <audio preload="auto">
+            <source src="http://pd.npr.org/anon.npr-mp3/npr/pchh/2016/08/20160801_pchh_mtv.mp3"/>
+         </audio><img class="audio-player__cover" src="https://unsplash.it/g/300/?image=43"/>
+         <video preload="auto" loop="loop">
+            <source src="https://dl.dropboxusercontent.com/u/5185018/audio-waves.mp4" type="video/mp4"/>
+         </video>
+      </div>
+      </li>
+   </ul> -->
+
+
 
       <div class="flex-container">
          <div class="flex-child magenta">
             <h6><b>stream</b> / strem / noun<b>  1</b> a body of running water (such as a river or creek) flowing on the earth <b> 2</b> digital data (such as audio or video material) that is continuously delivered one packet at a time and is usually intended for immediate processing or playback </h6>
          </div>
-            <h5>Sing up below to receive notifications about upcoming streams.</h5>
+            <h9>Sing up below to receive notifications about upcoming streams.</h9>
          <div class="flex-child green">
             <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSe88c5lRznzpsaY6VNb4Lx4C0KFWpe2xiyW3c-Rr7nU3sKbpw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                <input type="text" name="entry.1758100277" id="entry.1758100277" placeholder="Your email address...">
@@ -60,6 +139,7 @@
             <script type="text/javascript">
                var submitted = false;
             </script>
+
             <script type="text/javascript">
                $('#gform').on('submit', function(e) {
                  $('#gform *').fadeOut(2000);
@@ -69,7 +149,12 @@
          </div>
       </div>
       <br>
-      <h7>2021, Anežka Minaříková</h7>
+      <h9>2021, Anežka Minaříková</h9>
+
+
+      <!--all js code is on the bottom -->
+      <script type="text/javascript" src="js/audioplayer.js"></script>
+
    </body>
 </html>
 
