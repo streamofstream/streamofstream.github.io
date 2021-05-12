@@ -100,12 +100,12 @@ h2 {
 }
 
 h3 {
-  font-size: 1em;
-  line-height: 1.3em;
-  text-indent: 0.1em;
-  color: #303030;
-  font-family: monospace;
+  font-size: 25px;
+  line-height: 1.1em;
+  color: red;
   font-weight: normal;
+  word-spacing: 2, 3px;
+  font-family: "fourier_new_sharpregular";
 }
 h1 {
   font-weight: normal;
