@@ -153,6 +153,7 @@ h7 {
   width: 100%;
   height: 300px;
   margin: 0 auto;
+  margin-bottom: 2em;
   border: 0px solid #f3f3f3;
   padding: 0;
   position: relative;
@@ -191,8 +192,8 @@ h7 {
 }
 
 .trackArtwork img {
-  width: 280px;
-  height: 280px;
+  width: 350px;
+  height: 350px;
 }
 
 .playPause,
@@ -201,8 +202,8 @@ h7 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 280px;
-  height: 280px;
+  width: 350px;
+  height: 350px;
 }
 
 .play {
