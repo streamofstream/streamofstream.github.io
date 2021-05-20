@@ -75,7 +75,13 @@ body {
   margin-right: 6em;
   width: 39.99999%;
 }
-
+.comingsoon{
+  font-size: 25px;
+  line-height: 1.1em;
+  color: red;
+  word-spacing: 2, 3px;
+  font-family: "fourier_new_sharpregular";
+}
 p {
   font-size: 25px;
   line-height: 1.1em;
